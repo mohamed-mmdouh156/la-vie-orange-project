@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:la_vie_orange/mobile/presentation/screens/mobile/add_post.dart';
+import 'package:la_vie_orange/mobile/presentation/screens/mobile/blogs_details_screen.dart';
+import 'package:la_vie_orange/mobile/presentation/screens/mobile/blogs_screen.dart';
+import 'package:la_vie_orange/mobile/presentation/screens/mobile/cart_screen.dart';
+import 'package:la_vie_orange/mobile/presentation/screens/mobile/cart_search_screen.dart';
+import 'package:la_vie_orange/mobile/presentation/screens/mobile/qr_reader_screen.dart';
+import 'package:la_vie_orange/mobile/presentation/screens/mobile/questions_screen.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'mobile/business_logic/app_cubit/app_cubit.dart';
 import 'mobile/business_logic/home_cubit/home_cubit.dart';
@@ -20,7 +27,8 @@ void main() async{
   DioHelper.init();
   await CashHelper.init();
 
-  token = CashHelper.getData(key: 'token');
+  // token = CashHelper.getData(key: 'token');
+  token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4OTFjMjZlYS1kNTNhLTRkMjUtOThlMy1lMTgwNGQwZTk0ZTgiLCJpYXQiOjE2NjEzNjgwNDcsImV4cCI6MTY2MTU0MDg0N30.xm7AuJwZOf6NeHwS8WT3qvbaJj0FXtHwWA8mUtUj0pM";
 
   runApp(const MyApp());
   // blocObserver: MyBlocObserver();
