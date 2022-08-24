@@ -5,7 +5,7 @@ import 'package:la_vie_orange/mobile/business_logic/app_cubit/app_cubit.dart';
 import 'package:la_vie_orange/mobile/business_logic/app_cubit/app_state.dart';
 import 'package:la_vie_orange/mobile/presentation/styles/assets_manager.dart';
 import 'package:la_vie_orange/mobile/presentation/styles/color_manager.dart';
-import 'package:la_vie_orange/mobile/presentation/widget/button_manager.dart';
+import 'package:la_vie_orange/mobile/presentation/widget/defualt_button.dart';
 import 'package:la_vie_orange/mobile/presentation/widget/default_form_field.dart';
 import 'package:la_vie_orange/mobile/presentation/widget/toast.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
@@ -144,7 +144,7 @@ class ChangeEmail extends StatelessWidget {
                           ),
                           height: 12.h,
                           width: double.infinity,
-                          child: ButtonManager(
+                          child: DefaultButton(
                               title: 'Update',
                               function: (){
                                 cubit.updateCurrentUserEmail(

@@ -8,7 +8,7 @@ import 'package:la_vie_orange/mobile/presentation/resources/font_manager.dart';
 import 'package:la_vie_orange/mobile/presentation/resources/value_manager.dart';
 import 'package:la_vie_orange/mobile/presentation/styles/assets_manager.dart';
 import 'package:la_vie_orange/mobile/presentation/styles/color_manager.dart';
-import 'package:la_vie_orange/mobile/presentation/widget/button_manager.dart';
+import 'package:la_vie_orange/mobile/presentation/widget/defualt_button.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class SearchScreen extends StatelessWidget {
@@ -244,7 +244,7 @@ class SearchScreen extends StatelessWidget {
                         fontWeight: FontWeight.w500,
                       ),
                     ),
-                    ButtonManager(
+                    DefaultButton(
                       title: 'Add To Card',
                       function: () {
                         HomeCubit.get(context).insertItemToCard(
@@ -366,7 +366,7 @@ class SearchScreen extends StatelessWidget {
                         fontWeight: FontWeight.w500,
                       ),
                     ),
-                    ButtonManager(
+                    DefaultButton(
                       title: 'Add To Card',
                       function: () {
                         HomeCubit.get(context).insertItemToCard(

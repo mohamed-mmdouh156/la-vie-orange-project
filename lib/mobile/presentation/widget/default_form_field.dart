@@ -19,7 +19,7 @@ class DefaultFormField extends StatelessWidget {
     this.hint,
     required this.controller,
     this.textInputType,
-    this.isPassword=false,
+    this.isPassword = false,
     this.suffixIcon,
     this.suffixFunction,
     this.prefixWidget,

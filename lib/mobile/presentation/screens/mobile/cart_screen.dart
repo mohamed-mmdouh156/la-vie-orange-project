@@ -6,7 +6,7 @@ import 'package:la_vie_orange/mobile/business_logic/home_cubit/home_state.dart';
 import 'package:la_vie_orange/mobile/data/models/card_model.dart';
 import 'package:la_vie_orange/mobile/presentation/styles/assets_manager.dart';
 import 'package:la_vie_orange/mobile/presentation/styles/color_manager.dart';
-import 'package:la_vie_orange/mobile/presentation/widget/button_manager.dart';
+import 'package:la_vie_orange/mobile/presentation/widget/defualt_button.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class CartScreen extends StatelessWidget {
@@ -102,7 +102,7 @@ class CartScreen extends StatelessWidget {
                 ),
                 child: SizedBox(
                   width: double.infinity,
-                  child: ButtonManager(
+                  child: DefaultButton(
                     title: 'Checkout',
                     function: (){},
                   ),

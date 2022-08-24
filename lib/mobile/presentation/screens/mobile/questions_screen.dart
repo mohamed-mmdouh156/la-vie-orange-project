@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:la_vie_orange/mobile/presentation/resources/value_manager.dart';
 import 'package:la_vie_orange/mobile/presentation/styles/color_manager.dart';
-import 'package:la_vie_orange/mobile/presentation/widget/button_manager.dart';
+import 'package:la_vie_orange/mobile/presentation/widget/defualt_button.dart';
 
 class QuestionsScreen extends StatelessWidget {
   const QuestionsScreen({Key? key}) : super(key: key);
@@ -85,7 +85,7 @@ class QuestionsScreen extends StatelessWidget {
                   itemCount: 3,
               ),
             ),
-            ButtonManager(
+            DefaultButton(
                 title: 'Next',
                 function: (){},
             ),

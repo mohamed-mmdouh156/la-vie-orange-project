@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:la_vie_orange/mobile/business_logic/app_cubit/app_cubit.dart';
 import 'package:la_vie_orange/mobile/business_logic/app_cubit/app_state.dart';
 import 'package:la_vie_orange/mobile/presentation/styles/color_manager.dart';
-import 'package:la_vie_orange/mobile/presentation/widget/button_manager.dart';
+import 'package:la_vie_orange/mobile/presentation/widget/defualt_button.dart';
 import 'package:la_vie_orange/mobile/presentation/widget/default_form_field.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -121,7 +121,7 @@ class AddPost extends StatelessWidget {
                   SizedBox(height: 2.h,),
                   SizedBox(
                     width: double.infinity,
-                    child: ButtonManager(
+                    child: DefaultButton(
                       title: 'Post',
                       function: (){
                          cubit.createPost(

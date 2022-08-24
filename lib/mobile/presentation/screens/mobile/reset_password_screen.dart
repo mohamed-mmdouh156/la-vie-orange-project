@@ -5,7 +5,7 @@ import 'package:la_vie_orange/mobile/business_logic/user_data_cubit/user_data_cu
 import 'package:la_vie_orange/mobile/business_logic/user_data_cubit/user_data_state.dart';
 import 'package:la_vie_orange/mobile/presentation/styles/assets_manager.dart';
 import 'package:la_vie_orange/mobile/presentation/styles/color_manager.dart';
-import 'package:la_vie_orange/mobile/presentation/widget/button_manager.dart';
+import 'package:la_vie_orange/mobile/presentation/widget/defualt_button.dart';
 import 'package:la_vie_orange/mobile/presentation/widget/toast.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -167,7 +167,7 @@ class ResetPasswordScreen extends StatelessWidget {
                     ),
                     width: double.infinity,
                     height: 13.h,
-                    child: ButtonManager(
+                    child: DefaultButton(
                       title: 'Submit',
                       function: (){
                         cubit.resetPassword(

@@ -7,7 +7,7 @@ import 'package:la_vie_orange/mobile/presentation/resources/value_manager.dart';
 import 'package:la_vie_orange/mobile/presentation/screens/mobile/add_post.dart';
 import 'package:la_vie_orange/mobile/presentation/styles/assets_manager.dart';
 import 'package:la_vie_orange/mobile/presentation/styles/color_manager.dart';
-import 'package:la_vie_orange/mobile/presentation/widget/button_manager.dart';
+import 'package:la_vie_orange/mobile/presentation/widget/defualt_button.dart';
 import 'package:la_vie_orange/mobile/presentation/widget/navigate_to.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -122,7 +122,7 @@ class PostsScreen extends StatelessWidget {
                         SizedBox(
                           width: 38.w,
                           height: 11.5.h,
-                          child: cubit.isSelected[0]? ButtonManager(
+                          child: cubit.isSelected[0]? DefaultButton(
                             title: 'All forums',
                             function: (){
                               cubit.translateBetweenAllForumsAndMyForumsState();
@@ -161,7 +161,7 @@ class PostsScreen extends StatelessWidget {
                         SizedBox(
                           width: 38.w,
                           height: 11.5.h,
-                          child: cubit.isSelected[1]? ButtonManager(
+                          child: cubit.isSelected[1]? DefaultButton(
                             title: 'My forums',
                             function: (){
                               cubit.translateBetweenAllForumsAndMyForumsState();

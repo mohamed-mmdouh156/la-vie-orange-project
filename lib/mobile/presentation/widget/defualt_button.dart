@@ -4,8 +4,8 @@ import 'package:la_vie_orange/mobile/presentation/styles/color_manager.dart';
 
 
 
-class ButtonManager extends StatelessWidget {
-  const ButtonManager(
+class DefaultButton extends StatelessWidget {
+  const DefaultButton(
       {
         Key? key,
         required this.title,
